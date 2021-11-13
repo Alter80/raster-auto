@@ -4,10 +4,7 @@ This website is inspired from Toyota Cars, Rebranded with the name of "RASTER". 
 
 ## Website links
 Click Site :[Raster Live](https://raster-auth.web.app/)
-![alt text](https://i.ibb.co/tY6SjDX/Fire-Shot-Capture-010-React-App-localhost.png)
 ![alt text](https://i.ibb.co/W6w8Cv5/Fire-Shot-Capture-008-React-App-raster-auth-web-app.png)
-![alt text](https://i.ibb.co/mvPjj2n/Fire-Shot-Capture-006-React-App-raster-auth-web-app.png)
-![alt text](https://i.ibb.co/g4j1L4f/Fire-Shot-Capture-009-React-App-raster-auth-web-app.png)
 
 
 ## functionalities
