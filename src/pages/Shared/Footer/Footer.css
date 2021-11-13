@@ -1,0 +1,21 @@
+.footer {
+    background-color: #ffffff;  
+      padding: 100px;   
+}
+
+.footer-p{
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.footer-p:hover{
+    font-weight: 400;
+    color: #747474;
+}
+
+.footer img{
+    height: 200px;
+    width: auto;
+}
+
+
