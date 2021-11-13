@@ -1,3 +1,29 @@
+# Raster-Motors
+
+This website is inspired from Toyota Cars, Rebranded with the name of "RASTER". Mostly New Toyota cars are listed for the customers, so that customers can buy directly from the website. 
+
+## Website links
+Click Site :[Raster Live](https://raster-auth.web.app/)
+![alt text](https://i.ibb.co/tY6SjDX/Fire-Shot-Capture-010-React-App-localhost.png)
+![alt text](https://i.ibb.co/mvPjj2n/Fire-Shot-Capture-006-React-App-raster-auth-web-app.png)
+![alt text](https://i.ibb.co/W6w8Cv5/Fire-Shot-Capture-008-React-App-raster-auth-web-app.png)
+![alt text](https://i.ibb.co/g4j1L4f/Fire-Shot-Capture-009-React-App-raster-auth-web-app.png)
+
+
+## functionalities
+
+* Single Branded Car Retail Shop site. 
+* Super interactive and easy to use website
+* user can buy and see order details in the site
+* if the order gets approved and user gets his/her car then review section unlocks. 
+* User friendly & Responsive web-app.
+* Secure Login System
+* We have Login/Registration system for our Registered customer.
+* Responsive for Mobile Devices Too.
+
+-----------------------------------------------------------------------------------------------------------------
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
