@@ -5,6 +5,8 @@ import Banner from './Banner/Banner';
 import Featured from './Featured/Featured';
 import MyReviews from './MyReviews/MyReviews';
 
+
+
 const Home = () => {
 
     return (

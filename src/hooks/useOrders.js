@@ -16,7 +16,7 @@ const useOrders = () => {
 
         console.log(orderData);
 
-        fetch(`http://localhost:5000/addOrders/`, {
+        fetch(`https://infinite-fjord-65420.herokuapp.com/addOrders/`, {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(orderData)

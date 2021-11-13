@@ -11,7 +11,7 @@ const MyReviews = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        fetch('http://localhost:5000/addOrders')
+        fetch('https://infinite-fjord-65420.herokuapp.com/addOrders')
             .then(res => res.json())
             .then(data => setMyOrders(data));
     }, []);

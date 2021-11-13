@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 const useData = () => {
     const [cars, setCars] = useState([]);
 
-    const dataLocation = 'http://localhost:5000/cars';
+    const dataLocation = 'https://infinite-fjord-65420.herokuapp.com/cars';
 
     useEffect(() => {
         fetch(dataLocation)

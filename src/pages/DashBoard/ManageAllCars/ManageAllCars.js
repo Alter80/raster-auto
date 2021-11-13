@@ -6,7 +6,7 @@ const ManageAllCars = () => {
     const [cars, setCars] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/cars')
+        fetch('https://infinite-fjord-65420.herokuapp.com/cars')
             .then(res => res.json())
             .then(data => setCars(data));
 
@@ -16,7 +16,7 @@ const ManageAllCars = () => {
         const proceed = window.confirm('Are you sure you want to delete')
 
         if (proceed) {
-            const url = `http://localhost:5000/cars/${id}`;
+            const url = `https://infinite-fjord-65420.herokuapp.com/cars/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

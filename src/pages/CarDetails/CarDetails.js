@@ -10,7 +10,7 @@ const CarDetails = () => {
 
     // data fetch
     useEffect(() => {
-        const url = `http://localhost:5000/cars/${id}`;
+        const url = `https://infinite-fjord-65420.herokuapp.com/cars/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setCar(data));

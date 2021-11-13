@@ -12,7 +12,7 @@ const AddCar = () => {
         e.target.reset();
         console.log(data);
 
-        fetch(`http://localhost:5000/cars/`, {
+        fetch(`https://infinite-fjord-65420.herokuapp.com/cars/`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

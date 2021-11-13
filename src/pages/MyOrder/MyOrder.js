@@ -16,7 +16,7 @@ const MyOrder = () => {
     const [selectedId, setSelectedId] = useState();
 
     useEffect(() => {
-        fetch('http://localhost:5000/addOrders')
+        fetch('https://infinite-fjord-65420.herokuapp.com/addOrders')
             .then(res => res.json())
             .then(data => setMyOrders(data));
     }, [myOrders]);
@@ -34,7 +34,7 @@ const MyOrder = () => {
         console.log(selectedId)
 
         const givenRating = { rating, selectedId }
-        fetch('http://localhost:5000/addOrders', {
+        fetch('https://infinite-fjord-65420.herokuapp.com/addOrders', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -57,7 +57,7 @@ const MyOrder = () => {
         const proceed = window.confirm('Are you sure you want to delete')
 
         if (proceed) {
-            const url = `http://localhost:5000/addOrders/${id}`;
+            const url = `https://infinite-fjord-65420.herokuapp.com/addOrders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

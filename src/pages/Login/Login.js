@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Alert, Button } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -24,6 +24,8 @@ const Login = () => {
 
     };
     console.log(errors);
+    console.log(authError);
+
 
     console.log(user);
     return (
@@ -49,7 +51,9 @@ const Login = () => {
 
                                 <Button className="btn btn-lg btn-primary btn-block text-uppercase" type="submit" >Sign in</Button>
 
-
+                                {authError && <Alert variant="danger">
+                                    <p>{authError}</p>
+                                </Alert>}
 
                                 <hr className="my-4" />
                                 <p>Don't have an account? <Link to='/register'>Register Here</Link></p>

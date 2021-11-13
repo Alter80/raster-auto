@@ -33,8 +33,8 @@ const useFirebase = () => {
                 history.replace('/');
             })
             .catch((error) => {
-                setAuthError(error.message);
-                console.log(error);
+                const errorMessage = error.message;
+                setAuthError(errorMessage);
             })
             .finally(() => setIsLoading(false));
     }
@@ -46,12 +46,13 @@ const useFirebase = () => {
             .then((userCredential) => {
                 // const loggedinUser = userCredential;
                 // console.log(loggedinUser);
-                const destination = location?.state?.from || '/';
+                const destination = location?.state?.from || '/dashboard';
                 history.replace(destination);
                 setAuthError('');
             })
             .catch((error) => {
-                setAuthError(error.message);
+                const errorMessage = error.message;
+                setAuthError(errorMessage);
             })
             .finally(() => setIsLoading(false));
     }
@@ -82,7 +83,7 @@ const useFirebase = () => {
 
     // isAdmin
     useEffect(() => {
-        fetch(`http://localhost:5000/users/${user.email}`)
+        fetch(`https://infinite-fjord-65420.herokuapp.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email])
@@ -90,7 +91,7 @@ const useFirebase = () => {
     // send login data to mongodb
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
-        fetch('http://localhost:5000/users', {
+        fetch('https://infinite-fjord-65420.herokuapp.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'
@@ -99,6 +100,8 @@ const useFirebase = () => {
         })
             .then()
     }
+
+    // console.log(authError);
 
     return {
         user,

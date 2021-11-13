@@ -18,6 +18,9 @@ import OrderConfirm from './pages/OrderConfirm/OrderConfirm';
 import MyOrder from './pages/MyOrder/MyOrder';
 import DashboardDefault from './pages/DashBoard/DashBoard/DashboardDefault';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import ManageAllCars from './pages/DashBoard/ManageAllCars/ManageAllCars';
+import Payment from './pages/DashBoard/Payment/Payment';
+import AddCar from './pages/DashBoard/AddCar/AddCar';
 
 
 function App() {
@@ -52,29 +55,48 @@ function App() {
               <DashBoard></DashBoard>
             </PrivateRoute>
 
-            <PrivateRoute exact path='/makeadmin'>
+            {/* <PrivateRoute exact path='/makeadmin'>
               <MakeAdmin></MakeAdmin>
-            </PrivateRoute>
-
-            {/* <PrivateRoute exact path='/allorders'>
-              <AllOrders></AllOrders>
             </PrivateRoute> */}
 
-            <PrivateRoute exact path='/myorders'>
+            <Route path='/dashboard/allorders'>
+              <DashBoard></DashBoard>
+              {/* <AllOrders></AllOrders> */}
+            </Route>
+
+            <Route exact path='/dashboard/allCars'>
+              <DashBoard></DashBoard>
+              {/* <ManageAllCars></ManageAllCars> */}
+            </Route>
+
+            <PrivateRoute path='/myorders'>
               <MyOrder></MyOrder>
             </PrivateRoute>
 
-            <PrivateRoute exact path='/dashboard/dashboardhome'>
-              <DashboardDefault></DashboardDefault>
-            </PrivateRoute>
+            <Route path='/dashboard/dashboardhome'>
+              <DashBoard></DashBoard>
+              {/* <DashboardDefault></DashboardDefault> */}
+            </Route>
 
-            <PrivateRoute exact path='/dashboard/makeadmin'>
-              <MakeAdmin></MakeAdmin>
-            </PrivateRoute>
+            <Route path='/dashboard/makeadmin'>
+              <DashBoard></DashBoard>
+              {/* <MakeAdmin></MakeAdmin> */}
+            </Route>
 
-            <PrivateRoute exact path='/dashboard/allorders'>
-              <AllOrders></AllOrders>
-            </PrivateRoute>
+            <Route path='/dashboard/allorders'>
+              <DashBoard></DashBoard>
+              {/* <AllOrders></AllOrders> */}
+            </Route>
+
+            <Route exact path='/dashboard/payment'>
+              <DashBoard></DashBoard>
+              {/* <Payment></Payment> */}
+            </Route>
+
+            <Route exact path='/dashboard/addcar'>
+              <DashBoard></DashBoard>
+              {/* <AddCar></AddCar> */}
+            </Route>
             {/* dashboard part end */}
 
             <Route exact path='/login'>
@@ -87,6 +109,7 @@ function App() {
             <Route path='*'>
               <Notfound></Notfound>
             </Route>
+
           </Switch>
           <Footer></Footer>
         </Router>
